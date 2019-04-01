@@ -1,0 +1,25 @@
+PODS:
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.4.0)
+
+DEPENDENCIES:
+  - IGListKit (from `https://github.com/StevenArmandLee/IGListKit`)
+
+EXTERNAL SOURCES:
+  IGListKit:
+    :git: https://github.com/StevenArmandLee/IGListKit
+
+CHECKOUT OPTIONS:
+  IGListKit:
+    :commit: 441e70f287f489fad0fe141df2920dc397d4abba
+    :git: https://github.com/StevenArmandLee/IGListKit
+
+SPEC CHECKSUMS:
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+
+PODFILE CHECKSUM: b8838d31c1c3c8ecb3f904da551f54a351a5f4a6
+
+COCOAPODS: 1.6.0

@@ -1,0 +1,6 @@
+framework module Pods_IGListKitDemoUITests {
+  umbrella header "Pods-IGListKitDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,7 +13,6 @@ extension XCTestCase {
     private func setWaitExpectation(_ withLifeCycle: TimeInterval) {
         let exp = expectation(description: "preview time out")
         let result = XCTWaiter.wait(for: [exp], timeout: withLifeCycle)
-        print(result)
         switch(result) {
         case .completed:
             break
@@ -25,6 +24,8 @@ extension XCTestCase {
             break
         case .interrupted:
             break
+        @unknown default:
+            fatalError()
         }
     }
     

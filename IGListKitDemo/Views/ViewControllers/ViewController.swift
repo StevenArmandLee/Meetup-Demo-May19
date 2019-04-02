@@ -10,9 +10,11 @@ import UIKit
 import IGListKit
 class ViewController: UIViewController, ListAdapterOwner {
     var adapter: ListAdapter!
-    
     @IBOutlet weak var collectionView: UICollectionView!
     
+}
+
+extension ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ListAdapterBuilder.buid(self)

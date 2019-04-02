@@ -16,7 +16,7 @@ import UIKit
     @IBInspectable var rightInset: CGFloat = 7.0
     
     override func drawText(in rect: CGRect) {
-        let attributes: [NSAttributedString.Key: Any] = [ NSAttributedString.Key.font: font ]
+        let attributes: [NSAttributedString.Key: UIFont] = [ NSAttributedString.Key.font: font ]
         let options: NSStringDrawingOptions = [.usesFontLeading, .usesLineFragmentOrigin]
         if let actualWidth = (text as NSString?)?.boundingRect(with: rect.size, options: options, attributes: attributes, context: nil).width {
             let actualX = rect.origin.x + (rect.width - actualWidth) * 0.5

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SAContinueCell" customModule="IGListKitDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="599" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="599" height="126"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Of-pl-fyc">
+                        <rect key="frame" x="0.0" y="1" width="599" height="125"/>
+                        <state key="normal" title="Button" image="btnContinue"/>
+                        <connections>
+                            <action selector="onPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Xhb-Xw-ahN"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrh-kN-sOj">
+                        <rect key="frame" x="0.0" y="0.0" width="599" height="1"/>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.12156862745098039" blue="0.27450980392156865" alpha="0.01" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Zr2-HT-z7p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="1Of-pl-fyc" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="2Sq-IP-spW"/>
+                <constraint firstItem="1Of-pl-fyc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qap-Sn-pSO"/>
+                <constraint firstItem="jrh-kN-sOj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UAJ-Rc-PQ7"/>
+                <constraint firstAttribute="trailing" secondItem="jrh-kN-sOj" secondAttribute="trailing" id="YmQ-FH-VzZ"/>
+                <constraint firstAttribute="trailing" secondItem="1Of-pl-fyc" secondAttribute="trailing" id="jl3-Us-uHp"/>
+                <constraint firstItem="jrh-kN-sOj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kVX-eo-Y1A"/>
+                <constraint firstItem="1Of-pl-fyc" firstAttribute="top" secondItem="jrh-kN-sOj" secondAttribute="bottom" id="nBJ-MP-U4V"/>
+                <constraint firstAttribute="bottom" secondItem="1Of-pl-fyc" secondAttribute="bottom" id="ro9-yv-6Uc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="599" height="126"/>
+            <point key="canvasLocation" x="576.79999999999995" y="188.90554722638683"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btnContinue" width="40" height="40"/>
+    </resources>
+</document>

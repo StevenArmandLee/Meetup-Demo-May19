@@ -11,6 +11,18 @@
 		563DBCEF223FD03A006E4DE9 /* ActionableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DBCEE223FD03A006E4DE9 /* ActionableViewController.swift */; };
 		563DBCF1223FF6E4006E4DE9 /* DemoItemSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DBCF0223FF6E4006E4DE9 /* DemoItemSectionController.swift */; };
 		563DBCF3223FFA58006E4DE9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DBCF2223FFA58006E4DE9 /* DashboardViewController.swift */; };
+		566AB09E2253A327001027B0 /* RegistrationFoamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB09D2253A327001027B0 /* RegistrationFoamViewController.swift */; };
+		566AB0A12253A389001027B0 /* BaseRegistrationFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A02253A389001027B0 /* BaseRegistrationFormViewModel.swift */; };
+		566AB0A32253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A22253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift */; };
+		566AB0A52253A604001027B0 /* RegistrationFoamSectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A42253A604001027B0 /* RegistrationFoamSectionFactory.swift */; };
+		566AB0A72253A71F001027B0 /* EmbeddedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A62253A71F001027B0 /* EmbeddedCollectionViewCell.swift */; };
+		566AB0A92253A8D3001027B0 /* BaseRegistrationFormSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A82253A8D3001027B0 /* BaseRegistrationFormSectionModel.swift */; };
+		566AB0AB2253AAF6001027B0 /* RegistrationFormContinueSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0AA2253AAF6001027B0 /* RegistrationFormContinueSectionModel.swift */; };
+		566AB0AE2253ACB1001027B0 /* ActionAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0AD2253ACB1001027B0 /* ActionAble.swift */; };
+		566AB0B12253AD9B001027B0 /* SAContinueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0AF2253AD9B001027B0 /* SAContinueCell.swift */; };
+		566AB0B22253AD9B001027B0 /* SAContinueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566AB0B02253AD9B001027B0 /* SAContinueCell.xib */; };
+		566AB0B42253BDA9001027B0 /* SampleRegistrationFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0B32253BDA9001027B0 /* SampleRegistrationFormViewModel.swift */; };
+		566AB0B62253BE84001027B0 /* ViewControllerPreviewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0B52253BE84001027B0 /* ViewControllerPreviewerTests.swift */; };
 		568884CD2238B6DC009A5030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568884CC2238B6DC009A5030 /* AppDelegate.swift */; };
 		568884CF2238B6DC009A5030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568884CE2238B6DC009A5030 /* ViewController.swift */; };
 		568884D22238B6DC009A5030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568884D02238B6DC009A5030 /* Main.storyboard */; };
@@ -60,6 +72,18 @@
 		563DBCEE223FD03A006E4DE9 /* ActionableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableViewController.swift; sourceTree = "<group>"; };
 		563DBCF0223FF6E4006E4DE9 /* DemoItemSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItemSectionController.swift; sourceTree = "<group>"; };
 		563DBCF2223FFA58006E4DE9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		566AB09D2253A327001027B0 /* RegistrationFoamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFoamViewController.swift; sourceTree = "<group>"; };
+		566AB0A02253A389001027B0 /* BaseRegistrationFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRegistrationFormViewModel.swift; sourceTree = "<group>"; };
+		566AB0A22253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFoamVerticalSectionController.swift; sourceTree = "<group>"; };
+		566AB0A42253A604001027B0 /* RegistrationFoamSectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFoamSectionFactory.swift; sourceTree = "<group>"; };
+		566AB0A62253A71F001027B0 /* EmbeddedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedCollectionViewCell.swift; sourceTree = "<group>"; };
+		566AB0A82253A8D3001027B0 /* BaseRegistrationFormSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRegistrationFormSectionModel.swift; sourceTree = "<group>"; };
+		566AB0AA2253AAF6001027B0 /* RegistrationFormContinueSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormContinueSectionModel.swift; sourceTree = "<group>"; };
+		566AB0AD2253ACB1001027B0 /* ActionAble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionAble.swift; sourceTree = "<group>"; };
+		566AB0AF2253AD9B001027B0 /* SAContinueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAContinueCell.swift; sourceTree = "<group>"; };
+		566AB0B02253AD9B001027B0 /* SAContinueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAContinueCell.xib; sourceTree = "<group>"; };
+		566AB0B32253BDA9001027B0 /* SampleRegistrationFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRegistrationFormViewModel.swift; sourceTree = "<group>"; };
+		566AB0B52253BE84001027B0 /* ViewControllerPreviewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPreviewerTests.swift; sourceTree = "<group>"; };
 		568884C92238B6DC009A5030 /* IGListKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGListKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568884CC2238B6DC009A5030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		568884CE2238B6DC009A5030 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +157,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		566AB09B2253A272001027B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				566AB09C2253A285001027B0 /* ViewControllers */,
+				568885042238D575009A5030 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		566AB09C2253A285001027B0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				568884CE2238B6DC009A5030 /* ViewController.swift */,
+				566AB09D2253A327001027B0 /* RegistrationFoamViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		566AB09F2253A365001027B0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				566AB0A02253A389001027B0 /* BaseRegistrationFormViewModel.swift */,
+				566AB0B32253BDA9001027B0 /* SampleRegistrationFormViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		566AB0AC2253AC97001027B0 /* Actionables */ = {
+			isa = PBXGroup;
+			children = (
+				563DBCEE223FD03A006E4DE9 /* ActionableViewController.swift */,
+				566AB0AD2253ACB1001027B0 /* ActionAble.swift */,
+			);
+			path = Actionables;
+			sourceTree = "<group>";
+		};
 		568884C02238B6DC009A5030 = {
 			isa = PBXGroup;
 			children = (
@@ -158,19 +218,19 @@
 		568884CB2238B6DC009A5030 /* IGListKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				566AB0AC2253AC97001027B0 /* Actionables */,
+				566AB09F2253A365001027B0 /* ViewModels */,
+				568885012238D538009A5030 /* SectionControllers */,
+				566AB09B2253A272001027B0 /* Views */,
 				5688851D2238DCF7009A5030 /* PaddingLabel.swift */,
 				568885092238D5A2009A5030 /* Styles */,
-				568885042238D575009A5030 /* Cells */,
-				568885012238D538009A5030 /* SectionControllers */,
 				568884FA2238B7C7009A5030 /* Extensions */,
 				568884CC2238B6DC009A5030 /* AppDelegate.swift */,
-				568884CE2238B6DC009A5030 /* ViewController.swift */,
 				568884D02238B6DC009A5030 /* Main.storyboard */,
 				568884D32238B6DD009A5030 /* Assets.xcassets */,
 				568884D52238B6DD009A5030 /* LaunchScreen.storyboard */,
 				568884D82238B6DD009A5030 /* Info.plist */,
 				568884FD2238B837009A5030 /* ListAdapterOwner.swift */,
-				563DBCEE223FD03A006E4DE9 /* ActionableViewController.swift */,
 				563DBCF2223FFA58006E4DE9 /* DashboardViewController.swift */,
 			);
 			path = IGListKitDemo;
@@ -182,6 +242,7 @@
 				5688850C2238D966009A5030 /* Extensions */,
 				568884E12238B6DD009A5030 /* IGListKitDemoTests.swift */,
 				568884E32238B6DD009A5030 /* Info.plist */,
+				566AB0B52253BE84001027B0 /* ViewControllerPreviewerTests.swift */,
 			);
 			path = IGListKitDemoTests;
 			sourceTree = "<group>";
@@ -212,6 +273,10 @@
 				5688850F2238DA45009A5030 /* TitleValueSectionController.swift */,
 				568885022238D54F009A5030 /* LabelSectionController.swift */,
 				563DBCF0223FF6E4006E4DE9 /* DemoItemSectionController.swift */,
+				566AB0A22253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift */,
+				566AB0A42253A604001027B0 /* RegistrationFoamSectionFactory.swift */,
+				566AB0A82253A8D3001027B0 /* BaseRegistrationFormSectionModel.swift */,
+				566AB0AA2253AAF6001027B0 /* RegistrationFormContinueSectionModel.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -219,11 +284,14 @@
 		568885042238D575009A5030 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				566AB0AF2253AD9B001027B0 /* SAContinueCell.swift */,
+				566AB0B02253AD9B001027B0 /* SAContinueCell.xib */,
 				568885152238DA7E009A5030 /* PairedTitleValueCell.swift */,
 				568885162238DA7E009A5030 /* PairedTitleValueCell.xib */,
 				568885112238DA57009A5030 /* TitleValueCell.swift */,
 				568885122238DA57009A5030 /* TitleValueCell.xib */,
 				5688850A2238D5F4009A5030 /* LabelCell.swift */,
+				566AB0A62253A71F001027B0 /* EmbeddedCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -328,13 +396,16 @@
 				TargetAttributes = {
 					568884C82238B6DC009A5030 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					568884DC2238B6DD009A5030 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 568884C82238B6DC009A5030;
 					};
 					568884E72238B6DD009A5030 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 568884C82238B6DC009A5030;
 					};
 				};
@@ -364,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566AB0B22253AD9B001027B0 /* SAContinueCell.xib in Resources */,
 				568884D72238B6DD009A5030 /* LaunchScreen.storyboard in Resources */,
 				568884D42238B6DD009A5030 /* Assets.xcassets in Resources */,
 				568885142238DA58009A5030 /* TitleValueCell.xib in Resources */,
@@ -487,19 +559,29 @@
 				563DBCEF223FD03A006E4DE9 /* ActionableViewController.swift in Sources */,
 				568885002238B875009A5030 /* UIView.swift in Sources */,
 				568884CF2238B6DC009A5030 /* ViewController.swift in Sources */,
+				566AB0A72253A71F001027B0 /* EmbeddedCollectionViewCell.swift in Sources */,
 				5688850B2238D5F4009A5030 /* LabelCell.swift in Sources */,
 				568885032238D54F009A5030 /* LabelSectionController.swift in Sources */,
+				566AB0B12253AD9B001027B0 /* SAContinueCell.swift in Sources */,
 				568885132238DA58009A5030 /* TitleValueCell.swift in Sources */,
+				566AB0AB2253AAF6001027B0 /* RegistrationFormContinueSectionModel.swift in Sources */,
 				568885102238DA45009A5030 /* TitleValueSectionController.swift in Sources */,
+				566AB09E2253A327001027B0 /* RegistrationFoamViewController.swift in Sources */,
 				5688851C2238DC26009A5030 /* String.swift in Sources */,
 				5688851A2238DAD2009A5030 /* ListSectionControler.swift in Sources */,
+				566AB0B42253BDA9001027B0 /* SampleRegistrationFormViewModel.swift in Sources */,
+				566AB0A32253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift in Sources */,
+				566AB0A12253A389001027B0 /* BaseRegistrationFormViewModel.swift in Sources */,
 				568884FE2238B837009A5030 /* ListAdapterOwner.swift in Sources */,
 				568885172238DA7E009A5030 /* PairedTitleValueCell.swift in Sources */,
+				566AB0A52253A604001027B0 /* RegistrationFoamSectionFactory.swift in Sources */,
 				563DBCF1223FF6E4006E4DE9 /* DemoItemSectionController.swift in Sources */,
 				5688851E2238DCF7009A5030 /* PaddingLabel.swift in Sources */,
 				568884CD2238B6DC009A5030 /* AppDelegate.swift in Sources */,
 				568884FC2238B7DD009A5030 /* NSObject+ListDiffable.swift in Sources */,
+				566AB0AE2253ACB1001027B0 /* ActionAble.swift in Sources */,
 				563DBCF3223FFA58006E4DE9 /* DashboardViewController.swift in Sources */,
+				566AB0A92253A8D3001027B0 /* BaseRegistrationFormSectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +591,7 @@
 			files = (
 				5688850E2238D97F009A5030 /* XCTestCase.swift in Sources */,
 				568884E22238B6DD009A5030 /* IGListKitDemoTests.swift in Sources */,
+				566AB0B62253BE84001027B0 /* ViewControllerPreviewerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +759,7 @@
 			baseConfigurationReference = 38DC60ECA0D3DB324733C06D /* Pods-IGListKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TZ7NJE8YE2;
 				INFOPLIST_FILE = IGListKitDemo/Info.plist;
@@ -685,7 +769,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.StevenLee.MeetupDemo.IGListKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -695,6 +780,7 @@
 			baseConfigurationReference = 378F25D2F853EA0AC337903F /* Pods-IGListKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TZ7NJE8YE2;
 				INFOPLIST_FILE = IGListKitDemo/Info.plist;
@@ -704,7 +790,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.StevenLee.MeetupDemo.IGListKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -725,7 +812,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.StevenLee.MeetupDemo.IGListKitDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IGListKitDemo.app/IGListKitDemo";
 			};
@@ -747,7 +834,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.StevenLee.MeetupDemo.IGListKitDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IGListKitDemo.app/IGListKitDemo";
 			};
@@ -768,7 +855,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.StevenLee.MeetupDemo.IGListKitDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = IGListKitDemo;
 			};
@@ -789,7 +876,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.StevenLee.MeetupDemo.IGListKitDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = IGListKitDemo;
 			};

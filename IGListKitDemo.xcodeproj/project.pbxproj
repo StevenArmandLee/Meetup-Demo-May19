@@ -11,6 +11,10 @@
 		563DBCEF223FD03A006E4DE9 /* ActionableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DBCEE223FD03A006E4DE9 /* ActionableViewController.swift */; };
 		563DBCF1223FF6E4006E4DE9 /* DemoItemSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DBCF0223FF6E4006E4DE9 /* DemoItemSectionController.swift */; };
 		563DBCF3223FFA58006E4DE9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DBCF2223FFA58006E4DE9 /* DashboardViewController.swift */; };
+		5663D9C72254B75600DAFBD1 /* RegistrationFormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663D9C52254B75600DAFBD1 /* RegistrationFormTextFieldCell.swift */; };
+		5663D9C82254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5663D9C62254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib */; };
+		5663D9CC2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663D9CB2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift */; };
+		5663D9CE2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663D9CD2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift */; };
 		566AB09E2253A327001027B0 /* RegistrationFoamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB09D2253A327001027B0 /* RegistrationFoamViewController.swift */; };
 		566AB0A12253A389001027B0 /* BaseRegistrationFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A02253A389001027B0 /* BaseRegistrationFormViewModel.swift */; };
 		566AB0A32253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A22253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift */; };
@@ -72,6 +76,10 @@
 		563DBCEE223FD03A006E4DE9 /* ActionableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableViewController.swift; sourceTree = "<group>"; };
 		563DBCF0223FF6E4006E4DE9 /* DemoItemSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItemSectionController.swift; sourceTree = "<group>"; };
 		563DBCF2223FFA58006E4DE9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		5663D9C52254B75600DAFBD1 /* RegistrationFormTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormTextFieldCell.swift; sourceTree = "<group>"; };
+		5663D9C62254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationFormTextFieldCell.xib; sourceTree = "<group>"; };
+		5663D9CB2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormTextFieldSectionModel.swift; sourceTree = "<group>"; };
+		5663D9CD2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRegistrationFormSectionController.swift; sourceTree = "<group>"; };
 		566AB09D2253A327001027B0 /* RegistrationFoamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFoamViewController.swift; sourceTree = "<group>"; };
 		566AB0A02253A389001027B0 /* BaseRegistrationFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRegistrationFormViewModel.swift; sourceTree = "<group>"; };
 		566AB0A22253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFoamVerticalSectionController.swift; sourceTree = "<group>"; };
@@ -277,6 +285,8 @@
 				566AB0A42253A604001027B0 /* RegistrationFoamSectionFactory.swift */,
 				566AB0A82253A8D3001027B0 /* BaseRegistrationFormSectionModel.swift */,
 				566AB0AA2253AAF6001027B0 /* RegistrationFormContinueSectionModel.swift */,
+				5663D9CB2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift */,
+				5663D9CD2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -292,6 +302,8 @@
 				568885122238DA57009A5030 /* TitleValueCell.xib */,
 				5688850A2238D5F4009A5030 /* LabelCell.swift */,
 				566AB0A62253A71F001027B0 /* EmbeddedCollectionViewCell.swift */,
+				5663D9C52254B75600DAFBD1 /* RegistrationFormTextFieldCell.swift */,
+				5663D9C62254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -441,6 +453,7 @@
 				568885142238DA58009A5030 /* TitleValueCell.xib in Resources */,
 				568884D22238B6DC009A5030 /* Main.storyboard in Resources */,
 				568885182238DA7E009A5030 /* PairedTitleValueCell.xib in Resources */,
+				5663D9C82254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,12 +571,14 @@
 			files = (
 				563DBCEF223FD03A006E4DE9 /* ActionableViewController.swift in Sources */,
 				568885002238B875009A5030 /* UIView.swift in Sources */,
+				5663D9CE2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift in Sources */,
 				568884CF2238B6DC009A5030 /* ViewController.swift in Sources */,
 				566AB0A72253A71F001027B0 /* EmbeddedCollectionViewCell.swift in Sources */,
 				5688850B2238D5F4009A5030 /* LabelCell.swift in Sources */,
 				568885032238D54F009A5030 /* LabelSectionController.swift in Sources */,
 				566AB0B12253AD9B001027B0 /* SAContinueCell.swift in Sources */,
 				568885132238DA58009A5030 /* TitleValueCell.swift in Sources */,
+				5663D9CC2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift in Sources */,
 				566AB0AB2253AAF6001027B0 /* RegistrationFormContinueSectionModel.swift in Sources */,
 				568885102238DA45009A5030 /* TitleValueSectionController.swift in Sources */,
 				566AB09E2253A327001027B0 /* RegistrationFoamViewController.swift in Sources */,
@@ -580,6 +595,7 @@
 				568884CD2238B6DC009A5030 /* AppDelegate.swift in Sources */,
 				568884FC2238B7DD009A5030 /* NSObject+ListDiffable.swift in Sources */,
 				566AB0AE2253ACB1001027B0 /* ActionAble.swift in Sources */,
+				5663D9C72254B75600DAFBD1 /* RegistrationFormTextFieldCell.swift in Sources */,
 				563DBCF3223FFA58006E4DE9 /* DashboardViewController.swift in Sources */,
 				566AB0A92253A8D3001027B0 /* BaseRegistrationFormSectionModel.swift in Sources */,
 			);

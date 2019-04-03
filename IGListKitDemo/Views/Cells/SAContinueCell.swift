@@ -15,7 +15,7 @@ class SAContinueCell: UICollectionViewCell {
         // Initialization code
     }
     @IBAction func onPressed(_ sender: Any) {
-        actionable?.onPressed(nil)
+        actionable?.onAction(nil)
     }
     
 }

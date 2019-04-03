@@ -9,14 +9,14 @@
 import Foundation
 typealias ActionBlock = (Any?) -> Void
 class ActionableItem {
-    var onPressed: ActionBlock{
+    var onAction: ActionBlock{
         didSet{
             
         }
     }
     
-    init(onPressed: @escaping ActionBlock) {
-        self.onPressed = onPressed
+    init(onAction: @escaping ActionBlock) {
+        self.onAction = onAction
         
     }
 }

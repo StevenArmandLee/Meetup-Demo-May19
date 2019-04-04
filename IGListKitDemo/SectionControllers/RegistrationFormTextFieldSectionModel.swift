@@ -40,7 +40,7 @@ final class RegistrationFormTextFieldSectionModel: NSObject, BaseRegistrationFor
         if let regex = regex {
             
         }
-        return false
+        return true
     }
     
     var regex: String?

@@ -17,7 +17,11 @@ final class LabelAttribute {
         self.titleFont = titleFont
     }
 }
-final class TitleValueSectionModel: NSObject {
+final class TitleValueSectionModel: NSObject, ListBoundable {
+    func boundedSectionController() -> ListSectionController {
+        return TitleValueSectionController()
+    }
+    
     let title: String
     let value: String
     let titleAttribute: LabelAttribute
@@ -35,7 +39,6 @@ final class TitleValueSectionModel: NSObject {
 }
 
 final class TitleValueSectionController: ListSectionController {
-    
     private var model: TitleValueSectionModel!
     override init() {
         super.init()

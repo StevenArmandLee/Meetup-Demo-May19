@@ -24,8 +24,13 @@ class SampleRegistrationFormViewModel: BaseRegistrationFormViewModel {
     let user: User = User()
     
     init() {
-        user.firstName = "steven"
-        data = [LabelSectionModel(string: "test", color: .black, font: UIFont.systemFont(ofSize: 16)), RegistrationFormTextFieldSectionModel(valuereference: &user.firstName, placeHolder: "Frist Name", title: "Frist Name")]
+        user.firstName = "Steven"
+        user.lastName = "Lee"
+        data = [LabelSectionModel(string: "test", color: .black, font: UIFont.systemFont(ofSize: 16)),
+                RegistrationFormTextFieldSectionModel(valuereference: &user.firstName, placeHolder: "Frist Name", title: "Frist Name"),
+                RegistrationFormTextFieldSectionModel(valuereference: &user.lastName, placeHolder: "Last Name", title: "Last Name"),
+                RegistrationFormTextFieldSectionModel(valuereference: &user.address, placeHolder: "address", title: "address")
+        ]
     }
 }
 extension SampleRegistrationFormViewModel {

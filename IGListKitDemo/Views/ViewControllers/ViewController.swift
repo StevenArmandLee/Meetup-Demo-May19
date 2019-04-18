@@ -24,9 +24,10 @@ extension ViewController {
 //Remark: ListAdapterDataSource
 extension ViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return [LabelSectionModel(string: "test", color: .black, font: UIFont.systemFont(ofSize: 16)),
-                TitleValueSectionModel(title: "test", value: "yea", titleAttribute: LabelAttribute(titleColor: .black, titleFont: .systemFont(ofSize: 16)), valueAttribute: LabelAttribute(titleColor: .black, titleFont: .systemFont(ofSize: 16))),
-                DemoItem(name: "test", controllerClass: DashboardViewController.self, controllerIdentifier: "DashboardViewController")]
+        return [LabelSectionModel(string: "This is title", color: .black, font: UIFont.systemFont(ofSize: 26)),
+                TitleValueSectionModel(title: "Title", value: "Value", titleAttribute: LabelAttribute(titleColor: .black, titleFont: .systemFont(ofSize: 16)), valueAttribute: LabelAttribute(titleColor: .black, titleFont: .systemFont(ofSize: 16))),
+                DemoItem(name: "test", controllerClass: DashboardViewController.self, controllerIdentifier: "DashboardViewController")
+        ]
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {

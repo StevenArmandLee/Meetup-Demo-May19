@@ -10,7 +10,11 @@ import Foundation
 import IGListKit
 import UIKit
 
-final class LabelSectionModel: NSObject {
+final class LabelSectionModel: NSObject, ListBoundable {
+    func boundedSectionController() -> ListSectionController {
+        return LabelSectionController()
+    }
+    
     let string: String
     let color: UIColor
     let font: UIFont

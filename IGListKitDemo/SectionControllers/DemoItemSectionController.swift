@@ -10,7 +10,11 @@ import Foundation
 import IGListKit
 import UIKit
 
-final class DemoItem: NSObject {
+final class DemoItem: NSObject, ListBoundable {
+    func boundedSectionController() -> ListSectionController {
+        return DemoSectionController()
+    }
+    
     
     let name: String
     let controllerClass: UIViewController.Type

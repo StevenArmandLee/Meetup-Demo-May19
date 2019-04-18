@@ -11,6 +11,6 @@ import IGListKit
 class BaseRegistrationFormSectionController: ListSectionController {
     override func sizeForItem(at index: Int) -> CGSize {
         let width: CGFloat = collectionContext?.containerSize.width ?? 0
-        return CGSize(width: width, height: 80)
+        return CGSize(width: width, height: 50)
     }
 }

@@ -37,13 +37,20 @@ final class RegistrationFormTextFieldSectionModel: NSObject, BaseRegistrationFor
     }
     
     func isValid() -> Bool {
-        if let regex = regex {
-            
+        
+        if let regexPattern = regexPattern {
+            guard let regex = try? NSRegularExpression(pattern: regexPattern) else { return false }
+            if let currentValue = currentValue {
+                let range = NSRange(location: 0, length: currentValue.utf16.count)
+                return regex.firstMatch(in: currentValue, range: range) != nil
+            } else {
+                return false
+            }
         }
         return true
     }
     
-    var regex: String?
+    var regexPattern: String?
     
     
     var onErrorAction: ActionableItem?

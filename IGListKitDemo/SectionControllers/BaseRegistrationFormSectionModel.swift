@@ -10,8 +10,9 @@ import Foundation
 import IGListKit
 protocol FieldValidatable {
     func isValid() -> Bool
-    var regex: String? {get set}
+    var regexPattern: String? {get set}
 }
+
 
 protocol BaseRegistrationFormSectionModel: ListDiffable {
     func onSave()

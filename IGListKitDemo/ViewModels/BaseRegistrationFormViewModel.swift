@@ -40,6 +40,8 @@ protocol BaseRegistrationFormViewModel: class {
      */
     func save()
     
+    func updateReferenceData()
+    
     // MARK: --- optional methods ---
     func getUpperData() -> [Any]
     func getLowerData() -> RegistrationFoamVerticalSectionModel
@@ -50,13 +52,13 @@ protocol BaseRegistrationFormViewModel: class {
      It will save all the changes to local SA info object, and update the firebase cloud storage
      */
     
-    func checkAllFieldsIsNotEmpty() -> Bool
+    func checkAllFieldsAreValid() -> Bool
     
     func shouldShowContinueButton() -> Bool
 }
 extension BaseRegistrationFormViewModel {
     
-    func checkAllFieldsIsNotEmpty() -> Bool {
+    func checkAllFieldsAreValid() -> Bool {
         for model in data {
             if let model = model as? FieldValidatable {
                 if !(model.isValid()) {
@@ -69,6 +71,10 @@ extension BaseRegistrationFormViewModel {
     
     func getUpperData() -> [Any] {
         return data
+    }
+    
+    func updateReferenceData() {
+        data.forEach {($0 as? BaseRegistrationFormSectionModel)?.onSave()}
     }
     
     func getLowerData() -> RegistrationFoamVerticalSectionModel {

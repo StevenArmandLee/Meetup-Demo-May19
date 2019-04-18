@@ -90,6 +90,8 @@ final class RegistrationFoamSectionFactory: ListSectionController, ListAdapterDa
 //        return SATextFieldSectionController(delegate: model.delegate, scrollDelegate: self)
         if object is LabelSectionModel {
             return LabelSectionController()
+        } else if object is RegistrationFormTextFieldSectionModel {
+            return RegistrationFormTextFieldSectionController(scrollDelegate: self)
         }
         return RegistrationFormContinueSectionController()
     }

@@ -21,13 +21,17 @@ class SampleRegistrationFormViewModel: BaseRegistrationFormViewModel {
     
     var data: [ListDiffable]
     
-    func save() {
-        
-    }
+    let user: User = User()
     
     init() {
-        data = [LabelSectionModel(string: "test", color: .black, font: UIFont.systemFont(ofSize: 16))]
+        user.firstName = "steven"
+        data = [LabelSectionModel(string: "test", color: .black, font: UIFont.systemFont(ofSize: 16)), RegistrationFormTextFieldSectionModel(valuereference: &user.firstName, placeHolder: "Frist Name", title: "Frist Name")]
     }
-    
-    
+}
+extension SampleRegistrationFormViewModel {
+    func save() {
+        if checkAllFieldsAreValid() {
+            updateReferenceData()
+        }
+    }
 }

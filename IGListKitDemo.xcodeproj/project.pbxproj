@@ -48,6 +48,8 @@
 		5688851A2238DAD2009A5030 /* ListSectionControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568885192238DAD2009A5030 /* ListSectionControler.swift */; };
 		5688851C2238DC26009A5030 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688851B2238DC26009A5030 /* String.swift */; };
 		5688851E2238DCF7009A5030 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688851D2238DCF7009A5030 /* PaddingLabel.swift */; };
+		56C0332622681D4500F6483B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0332522681D4500F6483B /* User.swift */; };
+		56C03329226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C03328226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift */; };
 		719105E13FFB4068C32DB983 /* Pods_IGListKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2ECCECBD4D27FE09489F7A /* Pods_IGListKitDemo.framework */; };
 		9CA15EF93B797A63E27B78F0 /* Pods_IGListKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FA001676BD2504B1BA1AC1F /* Pods_IGListKitDemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -119,6 +121,8 @@
 		568885192238DAD2009A5030 /* ListSectionControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionControler.swift; sourceTree = "<group>"; };
 		5688851B2238DC26009A5030 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		5688851D2238DCF7009A5030 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		56C0332522681D4500F6483B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		56C03328226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormTextFieldSectionModelTests.swift; sourceTree = "<group>"; };
 		5B4E1FDBF8EAF75668050561 /* Pods-IGListKitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-IGListKitDemoTests/Pods-IGListKitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5FA001676BD2504B1BA1AC1F /* Pods_IGListKitDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGListKitDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		681793764E63C1A049751CC8 /* Pods-IGListKitDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemoTests.release.xcconfig"; path = "Target Support Files/Pods-IGListKitDemoTests/Pods-IGListKitDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +230,7 @@
 		568884CB2238B6DC009A5030 /* IGListKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				56C0332422681D3400F6483B /* Models */,
 				566AB0AC2253AC97001027B0 /* Actionables */,
 				566AB09F2253A365001027B0 /* ViewModels */,
 				568885012238D538009A5030 /* SectionControllers */,
@@ -247,6 +252,7 @@
 		568884E02238B6DD009A5030 /* IGListKitDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				56C03327226827B900F6483B /* Models */,
 				5688850C2238D966009A5030 /* Extensions */,
 				568884E12238B6DD009A5030 /* IGListKitDemoTests.swift */,
 				568884E32238B6DD009A5030 /* Info.plist */,
@@ -321,6 +327,22 @@
 				5688850D2238D97F009A5030 /* XCTestCase.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		56C0332422681D3400F6483B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56C0332522681D4500F6483B /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		56C03327226827B900F6483B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				56C03328226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		676380B631599EC6DA766763 /* Pods */ = {
@@ -577,6 +599,7 @@
 				5688850B2238D5F4009A5030 /* LabelCell.swift in Sources */,
 				568885032238D54F009A5030 /* LabelSectionController.swift in Sources */,
 				566AB0B12253AD9B001027B0 /* SAContinueCell.swift in Sources */,
+				56C0332622681D4500F6483B /* User.swift in Sources */,
 				568885132238DA58009A5030 /* TitleValueCell.swift in Sources */,
 				5663D9CC2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift in Sources */,
 				566AB0AB2253AAF6001027B0 /* RegistrationFormContinueSectionModel.swift in Sources */,
@@ -605,6 +628,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C03329226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift in Sources */,
 				5688850E2238D97F009A5030 /* XCTestCase.swift in Sources */,
 				568884E22238B6DD009A5030 /* IGListKitDemoTests.swift in Sources */,
 				566AB0B62253BE84001027B0 /* ViewControllerPreviewerTests.swift in Sources */,

@@ -25,7 +25,7 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                         <connections>
-                            <action selector="onValueChanged:" destination="gTV-IL-0wX" eventType="valueChanged" id="Inb-GG-Gfu"/>
+                            <action selector="onValueChanged:" destination="gTV-IL-0wX" eventType="editingChanged" id="VD0-kg-3IN"/>
                         </connections>
                     </textField>
                 </subviews>

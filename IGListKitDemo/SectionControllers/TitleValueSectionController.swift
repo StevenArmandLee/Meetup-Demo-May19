@@ -17,6 +17,18 @@ final class LabelAttribute {
         self.titleFont = titleFont
     }
 }
+
+final class CellAttribute {
+    let cornerRadius: CornerRadius
+    let cornerSize: CGFloat
+    let backgroundColor: UIColor
+    init (cornerRadius: CornerRadius = .none, cornerSize: CGFloat = 8, backgroundColor: UIColor = .clear){
+        self.cornerRadius = cornerRadius
+        self.cornerSize = cornerSize
+        self.backgroundColor = backgroundColor
+    }
+}
+
 final class TitleValueSectionModel: NSObject, ListBoundable {
     func boundedSectionController() -> ListSectionController {
         return TitleValueSectionController()
@@ -26,15 +38,13 @@ final class TitleValueSectionModel: NSObject, ListBoundable {
     let value: String
     let titleAttribute: LabelAttribute
     let valueAttribute: LabelAttribute
-    let cornerRadius: CornerRadius
-    let backgroundColor: UIColor
-    init(title: String, value: String, titleAttribute: LabelAttribute, valueAttribute: LabelAttribute, cornerRadius: CornerRadius = .none, backgroundColor: UIColor = .clear) {
+    let cellAttribute: CellAttribute
+    init(title: String, value: String, titleAttribute: LabelAttribute, valueAttribute: LabelAttribute, cellAttribute: CellAttribute = CellAttribute()) {
         self.title = title
         self.value = value
         self.titleAttribute = titleAttribute
         self.valueAttribute = valueAttribute
-        self.cornerRadius = cornerRadius
-        self.backgroundColor = backgroundColor
+        self.cellAttribute = cellAttribute
     }
 }
 
@@ -57,6 +67,8 @@ final class TitleValueSectionController: ListSectionController {
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         let cell = dequeCell(type: PairedTitleValueCell.self, atIndex: index)
         cell.viewModel = model
+        cell.roundCorners(cornersRadius: model.cellAttribute.cornerRadius, radius: model.cellAttribute.cornerSize)
+        cell.backgroundColor = model.cellAttribute.backgroundColor
         return cell
     }
     

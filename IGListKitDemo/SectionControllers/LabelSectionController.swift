@@ -16,12 +16,12 @@ final class LabelSectionModel: NSObject, ListBoundable {
     }
     
     let string: String
-    let color: UIColor
-    let font: UIFont
-    init(string: String, color: UIColor, font: UIFont) {
+    let labelAttribute: LabelAttribute
+    let cellAttribute: CellAttribute
+    init(string: String, labelAttribute: LabelAttribute, cellAttribute: CellAttribute = CellAttribute()) {
         self.string = string
-        self.color = color
-        self.font = font
+        self.labelAttribute = labelAttribute
+        self.cellAttribute = cellAttribute
     }
 }
 
@@ -38,15 +38,17 @@ final class LabelSectionController: ListSectionController {
     
     override func sizeForItem(at index: Int) -> CGSize {
         let width: CGFloat = collectionContext?.containerSize.width ?? 0
-        return CGSize(width: width, height: LabelCell.textHeight(model.string, width: width, font: model.font))
+        return CGSize(width: width, height: LabelCell.textHeight(model.string, width: width, font: model.labelAttribute.titleFont))
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         
         let cell = collectionContext?.dequeueReusableCell(of: LabelCell.self, for: self, at: index) as! LabelCell
-        cell.label.font = model.font
-        cell.label.textColor = model.color
+        cell.label.font = model.labelAttribute.titleFont
+        cell.label.textColor = model.labelAttribute.titleColor
         cell.text = model.string
+        cell.roundCorners(cornersRadius: model.cellAttribute.cornerRadius, radius: model.cellAttribute.cornerSize)
+        cell.backgroundColor = model.cellAttribute.backgroundColor
         return cell
     }
     

@@ -12,6 +12,12 @@ class ViewController: UIViewController, ListAdapterOwner {
     var adapter: ListAdapter!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let titleAtribute: LabelAttribute = LabelAttribute(titleColor: .white, titleFont: UIFont.systemFont(ofSize: 26))
+    let titleValueAttribute: LabelAttribute = LabelAttribute(titleColor: .white, titleFont: UIFont.systemFont(ofSize: 16))
+    
+    let cellTheme: CellAttribute = CellAttribute(backgroundColor: UIColor.white.withAlphaComponent(0.2))
+    let upperCellTheme: CellAttribute = CellAttribute(cornerRadius: .top, cornerSize: 8, backgroundColor: UIColor.white.withAlphaComponent(0.2))
+    let lowerCellTheme: CellAttribute = CellAttribute(cornerRadius: .bottom, cornerSize: 8, backgroundColor: UIColor.white.withAlphaComponent(0.2))
 }
 
 extension ViewController {
@@ -24,8 +30,12 @@ extension ViewController {
 //Remark: ListAdapterDataSource
 extension ViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return [LabelSectionModel(string: "This is title", color: .black, font: UIFont.systemFont(ofSize: 26)),
-                TitleValueSectionModel(title: "Title", value: "Value", titleAttribute: LabelAttribute(titleColor: .black, titleFont: .systemFont(ofSize: 16)), valueAttribute: LabelAttribute(titleColor: .black, titleFont: .systemFont(ofSize: 16))),
+        
+        return [EmptySectionModel(height: 20),
+                LabelSectionModel(string: "This is title", labelAttribute: titleAtribute, cellAttribute: upperCellTheme),
+                EmptySectionModel(height: 1, cellAttribute: CellAttribute(backgroundColor: .white)),
+                LabelSectionModel(string: "This is title", labelAttribute: titleValueAttribute, cellAttribute: cellTheme),
+                TitleValueSectionModel(title: "Title", value: "Value", titleAttribute: titleValueAttribute, valueAttribute: titleValueAttribute),
                 DemoItem(name: "test", controllerClass: DashboardViewController.self, controllerIdentifier: "DashboardViewController")
         ]
     }
@@ -35,6 +45,8 @@ extension ViewController: ListAdapterDataSource {
             return LabelSectionController()
         } else if object is DemoItem {
             return DemoSectionController()
+        } else if object is EmptySectionModel {
+            return EmptySectionController()
         }
         return TitleValueSectionController()
     }

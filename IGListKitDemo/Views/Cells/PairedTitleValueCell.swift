@@ -24,8 +24,8 @@ class PairedTitleValueCell: UICollectionViewCell {
             self.valueLabel.text = viewModel.value
             self.valueLabel.font = viewModel.valueAttribute.titleFont
             self.valueLabel.textColor = viewModel.valueAttribute.titleColor
-            self.backgroundColor = viewModel.backgroundColor
-            self.roundCorners(cornersRadius: viewModel.cornerRadius, radius: 8)
+            self.backgroundColor = viewModel.cellAttribute.backgroundColor
+            self.roundCorners(cornersRadius: viewModel.cellAttribute.cornerRadius, radius: 8)
         }
     }
     

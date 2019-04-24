@@ -27,8 +27,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gVo-op-5fG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.12156862745098039" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kv4-KB-AqU">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -47,10 +47,10 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.12156862745098039" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gVo-op-5fG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Hk-qY-ItI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gVo-op-5fG" secondAttribute="trailing" id="Bhb-9c-5Hu"/>
+                            <constraint firstItem="gVo-op-5fG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0Hk-qY-ItI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gVo-op-5fG" secondAttribute="trailing" constant="16" id="Bhb-9c-5Hu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gVo-op-5fG" secondAttribute="bottom" id="EZg-Ml-jzK"/>
                             <constraint firstItem="gVo-op-5fG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WZl-7v-c6c"/>
                         </constraints>

@@ -13,6 +13,8 @@ class RegistrationFormTextFieldCell: UICollectionViewCell {
     var actionable: ActionableItem?
     override func awakeFromNib() {
         super.awakeFromNib()
+        textField.text = User().firstName
+        User().firstName = textField.text
         // Initialization code
     }
     @IBAction func onValueChanged(_ sender: UITextField) {

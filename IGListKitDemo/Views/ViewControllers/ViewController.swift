@@ -36,7 +36,10 @@ extension ViewController: ListAdapterDataSource {
                 EmptySectionModel(height: 1, cellAttribute: CellAttribute(backgroundColor: .white)),
                 LabelSectionModel(string: "This is title", labelAttribute: titleValueAttribute, cellAttribute: cellTheme),
                 TitleValueSectionModel(title: "Title", value: "Value", titleAttribute: titleValueAttribute, valueAttribute: titleValueAttribute),
-                DemoItem(name: "test", controllerClass: DashboardViewController.self, controllerIdentifier: "DashboardViewController")
+                DemoItem(name: "test", controllerClass: DashboardViewController.self, controllerIdentifier: "DashboardViewController"),
+                ActionLabelSectionModel(actionAble: ActionableItem(onAction: { (_) in
+                    print("yea")
+                }), title: "yea", height: 50, labelAttribute: titleAtribute, cellAttribute: CellAttribute(cornerRadius: .both, cornerSize: 8, backgroundColor: .blue))
         ]
     }
     
@@ -47,6 +50,8 @@ extension ViewController: ListAdapterDataSource {
             return DemoSectionController()
         } else if object is EmptySectionModel {
             return EmptySectionController()
+        } else if object is ActionLabelSectionModel {
+            return ActionLabelSectionController()
         }
         return TitleValueSectionController()
     }

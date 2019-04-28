@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1395D7C5D5D3E790D161085B /* Pods_IGListKitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6697F4A25E8F657D1243E96 /* Pods_IGListKitDemoTests.framework */; };
+		56088DBC2275FACC00F6C3E2 /* ActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56088DBA2275FACC00F6C3E2 /* ActionCell.xib */; };
+		56088DBD2275FACC00F6C3E2 /* ActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56088DBB2275FACC00F6C3E2 /* ActionCell.swift */; };
 		563DBCEF223FD03A006E4DE9 /* ActionableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DBCEE223FD03A006E4DE9 /* ActionableViewController.swift */; };
 		563DBCF1223FF6E4006E4DE9 /* DemoItemSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DBCF0223FF6E4006E4DE9 /* DemoItemSectionController.swift */; };
 		563DBCF3223FFA58006E4DE9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563DBCF2223FFA58006E4DE9 /* DashboardViewController.swift */; };
@@ -50,6 +52,7 @@
 		5688851E2238DCF7009A5030 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688851D2238DCF7009A5030 /* PaddingLabel.swift */; };
 		56C0332622681D4500F6483B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0332522681D4500F6483B /* User.swift */; };
 		56C03329226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C03328226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift */; };
+		56E2CE0E2275FB0700142CE7 /* ActionLabelSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2CE0D2275FB0700142CE7 /* ActionLabelSectionController.swift */; };
 		56F0281D22703F9800137037 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F0281B22703F9700137037 /* EmptyCell.xib */; };
 		56F0281E22703F9800137037 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0281C22703F9700137037 /* EmptyCell.swift */; };
 		56F0282022703FB800137037 /* EmptySectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0281F22703FB800137037 /* EmptySectionController.swift */; };
@@ -78,6 +81,8 @@
 		016EF33FA79D64737938C75D /* Pods-IGListKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-IGListKitDemoUITests/Pods-IGListKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		378F25D2F853EA0AC337903F /* Pods-IGListKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemo.release.xcconfig"; path = "Target Support Files/Pods-IGListKitDemo/Pods-IGListKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		38DC60ECA0D3DB324733C06D /* Pods-IGListKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-IGListKitDemo/Pods-IGListKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		56088DBA2275FACC00F6C3E2 /* ActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionCell.xib; sourceTree = "<group>"; };
+		56088DBB2275FACC00F6C3E2 /* ActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCell.swift; sourceTree = "<group>"; };
 		563DBCEE223FD03A006E4DE9 /* ActionableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionableViewController.swift; sourceTree = "<group>"; };
 		563DBCF0223FF6E4006E4DE9 /* DemoItemSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoItemSectionController.swift; sourceTree = "<group>"; };
 		563DBCF2223FFA58006E4DE9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +131,7 @@
 		5688851D2238DCF7009A5030 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		56C0332522681D4500F6483B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		56C03328226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormTextFieldSectionModelTests.swift; sourceTree = "<group>"; };
+		56E2CE0D2275FB0700142CE7 /* ActionLabelSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLabelSectionController.swift; sourceTree = "<group>"; };
 		56F0281B22703F9700137037 /* EmptyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
 		56F0281C22703F9700137037 /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		56F0281F22703FB800137037 /* EmptySectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySectionController.swift; sourceTree = "<group>"; };
@@ -300,6 +306,7 @@
 				5663D9CB2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift */,
 				5663D9CD2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift */,
 				56F0281F22703FB800137037 /* EmptySectionController.swift */,
+				56E2CE0D2275FB0700142CE7 /* ActionLabelSectionController.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -307,6 +314,8 @@
 		568885042238D575009A5030 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				56088DBB2275FACC00F6C3E2 /* ActionCell.swift */,
+				56088DBA2275FACC00F6C3E2 /* ActionCell.xib */,
 				56F0281C22703F9700137037 /* EmptyCell.swift */,
 				56F0281B22703F9700137037 /* EmptyCell.xib */,
 				566AB0AF2253AD9B001027B0 /* SAContinueCell.swift */,
@@ -486,6 +495,7 @@
 				56F0281D22703F9800137037 /* EmptyCell.xib in Resources */,
 				568885182238DA7E009A5030 /* PairedTitleValueCell.xib in Resources */,
 				5663D9C82254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib in Resources */,
+				56088DBC2275FACC00F6C3E2 /* ActionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,11 +633,13 @@
 				568884FE2238B837009A5030 /* ListAdapterOwner.swift in Sources */,
 				568885172238DA7E009A5030 /* PairedTitleValueCell.swift in Sources */,
 				566AB0A52253A604001027B0 /* RegistrationFoamSectionFactory.swift in Sources */,
+				56E2CE0E2275FB0700142CE7 /* ActionLabelSectionController.swift in Sources */,
 				563DBCF1223FF6E4006E4DE9 /* DemoItemSectionController.swift in Sources */,
 				5688851E2238DCF7009A5030 /* PaddingLabel.swift in Sources */,
 				568884CD2238B6DC009A5030 /* AppDelegate.swift in Sources */,
 				56F0281E22703F9800137037 /* EmptyCell.swift in Sources */,
 				568884FC2238B7DD009A5030 /* NSObject+ListDiffable.swift in Sources */,
+				56088DBD2275FACC00F6C3E2 /* ActionCell.swift in Sources */,
 				566AB0AE2253ACB1001027B0 /* ActionAble.swift in Sources */,
 				5663D9C72254B75600DAFBD1 /* RegistrationFormTextFieldCell.swift in Sources */,
 				563DBCF3223FFA58006E4DE9 /* DashboardViewController.swift in Sources */,

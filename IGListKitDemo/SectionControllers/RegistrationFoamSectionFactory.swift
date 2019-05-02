@@ -60,40 +60,10 @@ final class RegistrationFoamSectionFactory: ListSectionController, ListAdapterDa
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-//        if object is SACountryPickerSectionModel {
-//            return SACountryPickerSectionController(delegate: model.delegate, scrollDelegate: self)
-//        } else if object is SAPhoneNumberSectionModel {
-//            return SAPhoneNumberSectionController(delegate: model.delegate, scrollDelegate: self)
-//        } else if object is SAPickerSectionModel {
-//            return SAPickerSectionController(delegate: model.delegate, scrollDelegate: self)
-//        } else if object is SAAdditionalWealthSourcesSectionModel {
-//            return SAAdditionalWealthSourcesSectionController()
-//        } else if object is SAUploadImageSectionModel {
-//            return SAUploadImageSectionController()
-//        } else if object is SASearchAddressTextFieldSectionModel {
-//            return SASearchAddressTextFieldSectionController(delegate: model.delegate, scrollDelegate: self)
-//        } else if object is SATitleImageSectionModel {
-//            return SATitleImageSectionController()
-//        } else if object is SATitleSegmentSectionModel {
-//            return SATitleSegmentController()
-//        } else if object is SADatePickerSecionModel {
-//            return SADatePickerSecionController(delegate: model.delegate, scrollDelegate: self)
-//        } else if object is SAContinueSectionModel {
-//            return SAContinueSectionController()
-//        } else if object is SAAutoFillSectionModel {
-//            return SAAutoFillSectionController(delegate: model.delegate, scrollDelegate: self)
-//        } else if object is LabelSectionModel {
-//            return LabelSectionController()
-//        } else if object is EmptySectionModel {
-//            return EmptySectionController()
-//        }
-//        return SATextFieldSectionController(delegate: model.delegate, scrollDelegate: self)
-        if object is LabelSectionModel {
-            return LabelSectionController()
-        } else if object is RegistrationFormTextFieldSectionModel {
-            return RegistrationFormTextFieldSectionController(scrollDelegate: self)
+        if let object = object as? ListBoundable {
+            return object.boundedSectionController()
         }
-        return RegistrationFormContinueSectionController()
+        return RegistrationFormTextFieldSectionController(scrollDelegate: self)
     }
     
     func emptyView(for listAdapter: ListAdapter) -> UIView? {

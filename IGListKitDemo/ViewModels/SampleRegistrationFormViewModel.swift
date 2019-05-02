@@ -26,7 +26,7 @@ class SampleRegistrationFormViewModel: BaseRegistrationFormViewModel {
     init() {
         user.firstName = "Steven"
         user.lastName = "Lee"
-        data = [
+        data = [ UploadImageSectionModel(noImageUploadedTitle: "Upload image", imageUploadedTitle: "change image"),
                 RegistrationFormTextFieldSectionModel(valuereference: &user.firstName, placeHolder: "Frist Name", title: "Frist Name"),
                 RegistrationFormTextFieldSectionModel(valuereference: &user.lastName, placeHolder: "Last Name", title: "Last Name"),
                 RegistrationFormTextFieldSectionModel(valuereference: &user.address, placeHolder: "address", title: "address")

@@ -10,7 +10,11 @@ import Foundation
 import IGListKit
 import UIKit
 
-final class RegistrationFormContinueSectionModel: NSObject {
+final class RegistrationFormContinueSectionModel: NSObject, ListBoundable {
+    func boundedSectionController() -> ListSectionController {
+        return RegistrationFormContinueSectionController()
+    }
+    
     let actionAble: ActionableItem
     init(actionAble: ActionableItem) {
         self.actionAble = actionAble

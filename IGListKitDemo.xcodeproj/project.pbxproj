@@ -53,6 +53,9 @@
 		56C0332622681D4500F6483B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0332522681D4500F6483B /* User.swift */; };
 		56C03329226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C03328226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift */; };
 		56E2CE0E2275FB0700142CE7 /* ActionLabelSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E2CE0D2275FB0700142CE7 /* ActionLabelSectionController.swift */; };
+		56E9C451227B40C9004A1A08 /* UploadImageSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E9C450227B40C9004A1A08 /* UploadImageSectionController.swift */; };
+		56E9C454227B41BF004A1A08 /* UploadImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E9C452227B41BE004A1A08 /* UploadImageCell.xib */; };
+		56E9C455227B41BF004A1A08 /* UploadImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E9C453227B41BF004A1A08 /* UploadImageCell.swift */; };
 		56F0281D22703F9800137037 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F0281B22703F9700137037 /* EmptyCell.xib */; };
 		56F0281E22703F9800137037 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0281C22703F9700137037 /* EmptyCell.swift */; };
 		56F0282022703FB800137037 /* EmptySectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0281F22703FB800137037 /* EmptySectionController.swift */; };
@@ -132,6 +135,9 @@
 		56C0332522681D4500F6483B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		56C03328226827D200F6483B /* RegistrationFormTextFieldSectionModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormTextFieldSectionModelTests.swift; sourceTree = "<group>"; };
 		56E2CE0D2275FB0700142CE7 /* ActionLabelSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLabelSectionController.swift; sourceTree = "<group>"; };
+		56E9C450227B40C9004A1A08 /* UploadImageSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageSectionController.swift; sourceTree = "<group>"; };
+		56E9C452227B41BE004A1A08 /* UploadImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadImageCell.xib; sourceTree = "<group>"; };
+		56E9C453227B41BF004A1A08 /* UploadImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageCell.swift; sourceTree = "<group>"; };
 		56F0281B22703F9700137037 /* EmptyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
 		56F0281C22703F9700137037 /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		56F0281F22703FB800137037 /* EmptySectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySectionController.swift; sourceTree = "<group>"; };
@@ -307,6 +313,7 @@
 				5663D9CD2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift */,
 				56F0281F22703FB800137037 /* EmptySectionController.swift */,
 				56E2CE0D2275FB0700142CE7 /* ActionLabelSectionController.swift */,
+				56E9C450227B40C9004A1A08 /* UploadImageSectionController.swift */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -314,6 +321,8 @@
 		568885042238D575009A5030 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				56E9C453227B41BF004A1A08 /* UploadImageCell.swift */,
+				56E9C452227B41BE004A1A08 /* UploadImageCell.xib */,
 				56088DBB2275FACC00F6C3E2 /* ActionCell.swift */,
 				56088DBA2275FACC00F6C3E2 /* ActionCell.xib */,
 				56F0281C22703F9700137037 /* EmptyCell.swift */,
@@ -493,6 +502,7 @@
 				568885142238DA58009A5030 /* TitleValueCell.xib in Resources */,
 				568884D22238B6DC009A5030 /* Main.storyboard in Resources */,
 				56F0281D22703F9800137037 /* EmptyCell.xib in Resources */,
+				56E9C454227B41BF004A1A08 /* UploadImageCell.xib in Resources */,
 				568885182238DA7E009A5030 /* PairedTitleValueCell.xib in Resources */,
 				5663D9C82254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib in Resources */,
 				56088DBC2275FACC00F6C3E2 /* ActionCell.xib in Resources */,
@@ -613,10 +623,12 @@
 			files = (
 				563DBCEF223FD03A006E4DE9 /* ActionableViewController.swift in Sources */,
 				568885002238B875009A5030 /* UIView.swift in Sources */,
+				56E9C455227B41BF004A1A08 /* UploadImageCell.swift in Sources */,
 				5663D9CE2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift in Sources */,
 				568884CF2238B6DC009A5030 /* ViewController.swift in Sources */,
 				566AB0A72253A71F001027B0 /* EmbeddedCollectionViewCell.swift in Sources */,
 				5688850B2238D5F4009A5030 /* LabelCell.swift in Sources */,
+				56E9C451227B40C9004A1A08 /* UploadImageSectionController.swift in Sources */,
 				568885032238D54F009A5030 /* LabelSectionController.swift in Sources */,
 				566AB0B12253AD9B001027B0 /* SAContinueCell.swift in Sources */,
 				56C0332622681D4500F6483B /* User.swift in Sources */,

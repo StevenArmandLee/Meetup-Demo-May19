@@ -17,7 +17,7 @@
 		5663D9C82254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5663D9C62254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib */; };
 		5663D9CC2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663D9CB2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift */; };
 		5663D9CE2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663D9CD2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift */; };
-		566AB09E2253A327001027B0 /* RegistrationFoamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB09D2253A327001027B0 /* RegistrationFoamViewController.swift */; };
+		566AB09E2253A327001027B0 /* RegistrationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB09D2253A327001027B0 /* RegistrationFormViewController.swift */; };
 		566AB0A12253A389001027B0 /* BaseRegistrationFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A02253A389001027B0 /* BaseRegistrationFormViewModel.swift */; };
 		566AB0A32253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A22253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift */; };
 		566AB0A52253A604001027B0 /* RegistrationFoamSectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566AB0A42253A604001027B0 /* RegistrationFoamSectionFactory.swift */; };
@@ -93,7 +93,7 @@
 		5663D9C62254B75600DAFBD1 /* RegistrationFormTextFieldCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationFormTextFieldCell.xib; sourceTree = "<group>"; };
 		5663D9CB2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormTextFieldSectionModel.swift; sourceTree = "<group>"; };
 		5663D9CD2254B9ED00DAFBD1 /* BaseRegistrationFormSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRegistrationFormSectionController.swift; sourceTree = "<group>"; };
-		566AB09D2253A327001027B0 /* RegistrationFoamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFoamViewController.swift; sourceTree = "<group>"; };
+		566AB09D2253A327001027B0 /* RegistrationFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewController.swift; sourceTree = "<group>"; };
 		566AB0A02253A389001027B0 /* BaseRegistrationFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRegistrationFormViewModel.swift; sourceTree = "<group>"; };
 		566AB0A22253A5BE001027B0 /* RegistrationFoamVerticalSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFoamVerticalSectionController.swift; sourceTree = "<group>"; };
 		566AB0A42253A604001027B0 /* RegistrationFoamSectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFoamSectionFactory.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				568884CE2238B6DC009A5030 /* ViewController.swift */,
-				566AB09D2253A327001027B0 /* RegistrationFoamViewController.swift */,
+				566AB09D2253A327001027B0 /* RegistrationFormViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -636,7 +636,7 @@
 				5663D9CC2254B94D00DAFBD1 /* RegistrationFormTextFieldSectionModel.swift in Sources */,
 				566AB0AB2253AAF6001027B0 /* RegistrationFormContinueSectionModel.swift in Sources */,
 				568885102238DA45009A5030 /* TitleValueSectionController.swift in Sources */,
-				566AB09E2253A327001027B0 /* RegistrationFoamViewController.swift in Sources */,
+				566AB09E2253A327001027B0 /* RegistrationFormViewController.swift in Sources */,
 				5688851C2238DC26009A5030 /* String.swift in Sources */,
 				5688851A2238DAD2009A5030 /* ListSectionControler.swift in Sources */,
 				566AB0B42253BDA9001027B0 /* SampleRegistrationFormViewModel.swift in Sources */,

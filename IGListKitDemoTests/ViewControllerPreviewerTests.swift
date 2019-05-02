@@ -20,7 +20,7 @@ class ViewControllerPreviewerTests: XCTestCase {
 
     func testExample() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "RegistrationFoamViewController") as! RegistrationFoamViewController
+        let controller = storyboard.instantiateViewController(withIdentifier: "RegistrationFormViewController") as! RegistrationFormViewController
         controller.viewModel = SampleRegistrationFormViewModel()
         self.loadViewController(UINavigationController(rootViewController: controller))
     }

@@ -30,6 +30,13 @@ extension ViewController {
 //Remark: ListAdapterDataSource
 extension ViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        let goToAdvanced = ActionLabelSectionModel(actionAble: ActionableItem(onAction: { (_) in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "RegistrationFormViewController") as! RegistrationFormViewController
+            controller.viewModel = SampleRegistrationFormViewModel()
+            self.navigationController?.pushViewController(controller, animated: true)
+        }), title: "go to advanced example", height: 50, labelAttribute: titleAtribute, cellAttribute: CellAttribute(cornerRadius: .both, cornerSize: 8, backgroundColor: UIColor(red: 62/255, green: 126/255, blue: 1, alpha: 1)))
+        
         
         return [EmptySectionModel(height: 20),
                 LabelSectionModel(string: "This is title", labelAttribute: titleAtribute, cellAttribute: upperCellTheme),
@@ -39,8 +46,11 @@ extension ViewController: ListAdapterDataSource {
                 DemoItem(name: "test", controllerClass: DashboardViewController.self, controllerIdentifier: "DashboardViewController"),
                 ActionLabelSectionModel(actionAble: ActionableItem(onAction: { (_) in
                     print("yea")
-                }), title: "yea", height: 50, labelAttribute: titleAtribute, cellAttribute: CellAttribute(cornerRadius: .both, cornerSize: 8, backgroundColor: .blue))
+                }), title: "yea", height: 50, labelAttribute: titleAtribute, cellAttribute: CellAttribute(cornerRadius: .both, cornerSize: 8, backgroundColor: UIColor(red: 62/255, green: 126/255, blue: 1, alpha: 1))),
+                EmptySectionModel(height: 20),
+                goToAdvanced
         ]
+        
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {

@@ -59,7 +59,7 @@ final class DemoSectionController: ListSectionController {
             fatalError()
         }
         cell.text = object?.name
-        cell.label.textColor = UIColor.black
+        cell.label.textColor = UIColor.white
         return cell
     }
     

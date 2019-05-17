@@ -37,6 +37,9 @@ extension SampleRegistrationFormViewModel {
     func save() {
         if checkAllFieldsAreValid() {
             updateReferenceData()
+            print(user.firstName)
+            print(user.lastName)
+            print(user.address)
         }
     }
 }

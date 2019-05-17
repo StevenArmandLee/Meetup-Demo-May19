@@ -66,7 +66,13 @@ final class TitleValueSectionController: ListSectionController {
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         let cell = dequeCell(type: PairedTitleValueCell.self, atIndex: index)
-        cell.viewModel = model
+        cell.titleLabel.text = model.title
+        cell.titleLabel.font = model.titleAttribute.titleFont
+        cell.titleLabel.textColor = model.titleAttribute.titleColor
+        cell.valueLabel.text = model.value
+        cell.valueLabel.font = model.valueAttribute.titleFont
+        cell.valueLabel.textColor = model.valueAttribute.titleColor
+        cell.backgroundColor = model.cellAttribute.backgroundColor
         cell.roundCorners(cornersRadius: model.cellAttribute.cornerRadius, radius: model.cellAttribute.cornerSize)
         cell.backgroundColor = model.cellAttribute.backgroundColor
         return cell

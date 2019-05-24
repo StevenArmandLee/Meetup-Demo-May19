@@ -57,14 +57,17 @@ extension ViewController: ListAdapterDataSource {
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        if object is LabelSectionModel {
-            return LabelSectionController()
-        } else if object is DemoItem {
-            return DemoSectionController()
-        } else if object is EmptySectionModel {
-            return EmptySectionController()
-        } else if object is ActionLabelSectionModel {
-            return ActionLabelSectionController()
+//        if object is LabelSectionModel {
+//            return LabelSectionController()
+//        } else if object is DemoItem {
+//            return DemoSectionController()
+//        } else if object is EmptySectionModel {
+//            return EmptySectionController()
+//        } else if object is ActionLabelSectionModel {
+//            return ActionLabelSectionController()
+//        }
+        if let object = object as? ListBoundable {
+            return object.boundedSectionController()
         }
         return TitleValueSectionController()
     }
